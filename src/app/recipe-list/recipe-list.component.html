@@ -1,0 +1,12 @@
+<div class="recipe-list-container">
+  <div class="header">
+    <h1> Retseptid </h1>
+    <a routerLink="/add" class="submit-button button-block">Lisa retsept</a>
+    <hr/>
+  </div>
+  <div class="recipes">
+    <div *ngFor="let recipe of recipes">
+      <app-recipe [recipe]="recipe"></app-recipe>
+    </div>
+  </div>
+</div>

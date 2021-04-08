@@ -1,0 +1,46 @@
+.recipe-list-container {
+  text-align: center;
+  min-width: 38vw;
+  & a {
+    text-decoration: none;
+    color: #2c3e50;
+  }
+}
+.header {
+  margin-bottom: 30px;
+  padding: 30px 50px;
+  background-color: #F1F5F2;
+  & h1 {
+    margin-bottom: 30px;
+  }
+  & hr {
+    margin-top: 30px;
+    color: lightgray;
+  }
+}
+.recipes {
+  padding: 0 50px;
+  max-height: 30vh;
+  overflow-y: auto;
+}
+.submit-button {
+  display: inline-block;
+  background: lightgray;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: inherit;
+}
+.submit-button:focus {
+  outline: none;
+}
+.submit-button:active {
+  transform: scale(0.60);
+}
+.button-block {
+  display: block;
+  width: 100%;
+}
