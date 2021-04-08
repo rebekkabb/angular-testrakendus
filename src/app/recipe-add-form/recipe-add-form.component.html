@@ -1,0 +1,25 @@
+<form class='form-container' [formGroup]="addForm" (ngSubmit)="onSubmit()">
+  <a routerLink="/" class="return-link">Tagasi </a>
+  <h1> Lisa retsept </h1>
+  <div class='form-element'>
+    <label for="title"> Retsepti pealkiri</label>
+    <input id="title" type='text' formControlName="title" placeholder='Lisa pealkiri'/>
+  </div>
+  <div class='form-element'>
+    <label for="type">Käik</label>
+    <input id="type" type='text' formControlName="type" placeholder='Lisa käik'/>
+  </div>
+  <div class='form-element'>
+    <label for="time">Valmistusaeg</label>
+    <input id="time" type='number' formControlName="time" placeholder='Lisa valmistusaeg'/>
+  </div>
+  <div class='form-element'>
+    <label for="ingredients"> Koostisosad</label>
+    <textarea id='ingredients' formControlName="ingredients" placeholder='Lisa koostisosad'></textarea>
+  </div>
+  <div class='form-element'>
+    <label for="steps"> Juhised </label>
+    <textarea id='steps' formControlName="steps" placeholder='Lisa juhised'></textarea>
+  </div>
+  <input class='submit-button button-block' type='submit' value='Salvesta retsept'/>
+</form>
